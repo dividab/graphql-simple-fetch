@@ -2,12 +2,19 @@
   "name": "graphql-simple-fetch",
   "version": "1.0.0",
   "description": "Lightweight request library for graphql with support for graphql-multipart-request-spec",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "typings/index.d.ts",
   "author": "Divid AB",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dividab/graphql-norm.git"
+  },
+  "dependencies": {
+    "extract-files": "^5.0.1"
+  },
   "devDependencies": {
     "@types/node": "^12.7.5",
-    "extract-files": "^5.0.1",
     "graphql": "^14.5.6",
     "graphql-tag": "^2.10.1",
     "html-webpack-plugin": "^3.2.0",
@@ -18,7 +25,6 @@
     "webpack-cli": "^3.3.9",
     "webpack-dev-server": "^3.8.1"
   },
-  "typings": "typings",
   "scripts": {
     "start": "webpack-dev-server --config demo/webpack.config.js",
     "build": "rimraf dist && rimraf typings && tsc -p src"
