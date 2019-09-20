@@ -8,9 +8,6 @@ module.exports = {
   mode: "development",
   entry: "./demo/index.ts",
   devtool: "inline-source-map",
-  devServer: {
-    contentBase: demoPath
-  },
   resolve: {
     // Add `.ts` and `.tsx` as a resolvable extension.
     extensions: [".mjs", ".ts", ".tsx", ".js"]

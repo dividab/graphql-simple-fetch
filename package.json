@@ -20,7 +20,7 @@
   },
   "typings": "typings",
   "scripts": {
-    "start": "webpack-dev-server --config webpack/webpack.config.js",
+    "start": "webpack-dev-server --config demo/webpack.config.js",
     "build": "rimraf dist && rimraf typings && tsc -p src"
   },
   "files": [
