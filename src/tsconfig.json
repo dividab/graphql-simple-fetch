@@ -6,9 +6,10 @@
     "target": "es5",
     "sourceMap": true,
     "strictNullChecks": true,
-    "declaration": true,
     "noUnusedLocals": true,
-    "outDir": "dist",
+    "outDir": "../dist",
+    "declaration": true,
+    "declarationDir": "../typings",
     "lib": ["es2015", "es2016", "dom", "esnext.asynciterable"]
   },
   "exclude": ["node_modules"]
