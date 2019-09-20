@@ -7,7 +7,7 @@ const extractFiles: <T>(
 } = untyped;
 
 export interface RequestHeaders {
-  readonly   [key: string]: string
+  readonly [key: string]: string;
 }
 
 export interface Options {
@@ -155,7 +155,7 @@ async function executeRequest(
 
     response = await fetch(url, {
       method: "POST",
-      headers: { ...headers, "Content-Type": "application/json" },
+      headers: { ...headers },
       ...others,
       body: form
     });
