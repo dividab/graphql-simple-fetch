@@ -43,7 +43,7 @@ GraphQLSimpleFetch.rawRequest(
 });
 GraphQLSimpleFetch.request(
   "https://spotify-graphql-server.herokuapp.com/graphql",
-  {},
+  { headers: { "x-olle": "olle" } },
   print(query2),
   {}
 ).then(data => {

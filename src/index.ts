@@ -6,9 +6,13 @@ const extractFiles: <T>(
   files: Map<File, [string]>;
 } = untyped;
 
+export interface RequestHeaders {
+  readonly   [key: string]: string
+}
+
 export interface Options {
   method?: RequestInit["method"];
-  headers?: Headers;
+  headers?: RequestHeaders;
   mode?: RequestInit["mode"];
   credentials?: RequestInit["credentials"];
   cache?: RequestInit["cache"];
@@ -117,7 +121,7 @@ interface ExecuteRequestResult {
 }
 async function executeRequest(
   url: string,
-  options: RequestInit,
+  options: Options,
   query: string,
   variables?: Variables
 ): Promise<ExecuteRequestResult> {
